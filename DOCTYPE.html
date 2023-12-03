@@ -1,0 +1,161 @@
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="applicationForm">
+    <!-- Personal Information Section -->
+    <section>
+      <h2>Account Information</h2>
+      <label for="Login Name">Login Name:</label>
+      <input type="text" id="Login Name" name="Login Name" required>
+
+      <label for="Passward">Passward:</label>
+      <input type="Passward" id="Passward" name="Passward" required>
+
+      <label for="Confirm Passward">Confirm Passward:</label>
+      <input type="Confirm Passward" id="Confirm Passward" name="Confirm Passward" required>
+
+      <label for="Email Address">Email Address:</label>
+      <input type="Email Address" id="Email Address" name="Email Address" required>
+
+      <label for="Confirm Email">Confirm Email:</label>
+      <input type="Confirm Email" id="Confirm Email" name="Confirm Email" required>
+
+    </section>
+
+    <!-- Contact Information Section -->
+    <section>
+      <h2>Contact Information</h2>
+      <label for="First Name">First Name:</label>
+      <input type="text" id="First Name" name="First Name" required>
+      
+      <label for="Last Name">Last Name:</label>
+      <input type="text" id="Last Name" name="Last Name" required>
+      
+      <label for="Address 1">Address 1:</label>
+      <input type="text" id="Address 1" name="Address 1" required>
+
+      <label for="Address 2">Address 2:</label>
+      <input type="text" id="Address 2" name="Address 2" required>
+
+      <label for="City">City:</label>
+      <input type="City" id="City" name="City" required>
+
+    <section>
+      <h2>Misc.Information</h2>
+      <label for="State or Province">State or Province:</label>
+      <select id="State or Province" name="State or Province" required>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <!-- Add more options as needed -->
+    </select>
+ 
+      <label for="Zip">Zip:</label>
+      <input type="Zip" id="Zip" name="Zip" required>
+
+      <label for="Country">Country:</label>
+      <input type="Country" id="Country" name="Country" required>
+
+
+    <section>
+     <p>Gender:</p>
+      <input type="radio" id="genderChoice1" name="gender" value="male" >
+      <label for="genderChoice1">Male</label>
+      <input type="radio" id="genderChoice2" name="gender" value="female">
+      <label for="genderChoice2">Female</label>
+      
+    </section>
+
+
+
+    <!-- Misc.Information -->
+    <section>
+      <h2>Misc.Information</h2>
+      <label for="Annual Household Income">Annual Household Income:</label>
+      <select id="Annual Household Income" name="Annual Household Income" required>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <!-- Add more options as needed -->
+      </select>
+
+      <p>Interets:</p>
+      <input type="checkbox" id="Shopping/Fashion" name="interest" value="Shopping/Fashion">
+      <label for="Shopping/Fashion">Shopping/Fashion</label>
+      <input type="checkbox" id="Sports" name="interest" value="Sports">
+      <label for="Sports">Sports</label>
+      <input type="checkbox" id="Travel" name="interest" value="Travel">
+      <label for="Travel">Travel</label> 
+
+    </section>
+
+    <section>
+      <p>Eye Color:</p>
+      <label for="Red">Red</label><input type="checkbox" id="Red" name="Eye Color" value="Red">
+      
+      <label for="Green">Green</label><input type="checkbox" id="Green" name="Eye Color" value="Green">
+      
+      <label for="Brown">Brown</label><input type="checkbox" id="Brown" name="Eye Color" value="Brown">
+      
+      <label for="Blue Gold">Blue Gold</label><input type="checkbox" id="Blue Gold" name="Eye Color" value="Blue Gold">
+       
+
+    </section>
+
+
+
+    <button type="submit">Submit Application</button>
+    <button type="reset">reset</button>
+  </form>
+
+
+</body>
+</html>
